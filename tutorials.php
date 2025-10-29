@@ -114,7 +114,7 @@
 
     .sidebar {
         width: 260px;
-        background-color: #2a4055;
+        background-color: #555;
         color: white;
         padding: 30px 20px;
         display: flex;
@@ -245,4 +245,5 @@
 
 </body>
 </html>
+
 
