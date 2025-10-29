@@ -112,7 +112,6 @@
         min-height: 100vh;
 }
 
-/* Sidebar */
     .sidebar {
         width: 260px;
         background-color: #2a4055;
@@ -154,7 +153,6 @@
         padding-left: 5px;
 }
 
-/* Content */
     .content {
         flex: 1;
         background: #F0F8FF;
@@ -162,7 +160,6 @@
         overflow-y: auto;
 }
 
-/* Hide all sections by default */
     .resource-section {
         display: none;
         margin-bottom: 50px;
@@ -170,7 +167,6 @@
         border-bottom: 1px solid #ddd;
 }
 
-/* Only show the active section */
     .resource-section.active {
         display: block;
 }
@@ -207,7 +203,6 @@
         text-decoration: underline;
 }
 
-/* Scrollbar styling */
     .content::-webkit-scrollbar {
         width: 10px;
 }
@@ -224,7 +219,7 @@
   <?php include 'footer.php'; ?>
 
   <script>
-    // Sidebar filtering logic
+    // sidebar filtering logic
     const links = document.querySelectorAll('.sidebar a');
     const sections = document.querySelectorAll('.resource-section');
 
@@ -250,3 +245,4 @@
 
 </body>
 </html>
+
