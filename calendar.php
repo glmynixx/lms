@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard Calendar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Calendar</title>
+  
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -12,6 +13,7 @@
     padding: 0;
     background: #f0f2f5;
   }
+  
   .calendar {
     background: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -21,16 +23,19 @@
     margin: auto;
 
   }
+  
   .calendar header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
   }
+  
   .calendar header h2 {
     margin: 0;
     font-size: 1.2em;
   }
+  
   .calendar button {
     background: #2a4055;
     align
@@ -41,32 +46,38 @@
     cursor: pointer;
     margin: 5px;
   }
+  
   .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
     gap: 5px;
   }
+  
   .day-name {
     font-weight: bold;
     color: #555;
   }
+  
   .date {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
   }
+  
   .date.today {
     background: #2a4055;
     color: #fff;
   }
+  
   .date:hover {
     background: #e0e0e0;
   }
+  
 </style>
 </head>
 <body>
-
+  
 <div class="calendar">
   <header>
     <button id="prevMonth">‹</button>
@@ -74,7 +85,7 @@
     <button id="nextMonth">›</button>
   </header>
   <div class="days" id="daysContainer">
-    <!-- Days will be injected here -->
+    <!-- days will be injected here -->
   </div>
 </div>
 
@@ -101,7 +112,7 @@
     
     monthYear.textContent = `${monthNames[month]} ${year}`;
 
-    // Add day names
+    // add day names
     dayNames.forEach(day => {
       const dayEl = document.createElement('div');
       dayEl.classList.add('day-name');
@@ -112,13 +123,13 @@
     const firstDay = new Date(year, month, 1).getDay();
     const lastDate = new Date(year, month + 1, 0).getDate();
 
-    // Blank days for offset
+    // blank days for offset
     for (let i = 0; i < firstDay; i++) {
       const blank = document.createElement('div');
       daysContainer.appendChild(blank);
     }
 
-    // Render dates
+    // render dates
     for (let day = 1; day <= lastDate; day++) {
       const dateEl = document.createElement('div');
       dateEl.classList.add('date');
@@ -149,3 +160,4 @@
 
 </body>
 </html>
+
