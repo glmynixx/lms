@@ -23,9 +23,9 @@
             <h3>Cybersecurity</h3>
             <p>Learn to protect computer systems, networks, and data from cyber threats</p>
             <div class="progress-bar">
-              <div class="progress-value" style="width: 55%"></div>
+              <div class="progress-value" style="width: 10%"></div>
             </div>
-            <p>55% Complete</p>
+            <p>10% Complete</p>
             <a href="cybersecurity.php" class="btn btn-primary">Continue Learning</a>
           </div>
         </div>
@@ -35,9 +35,9 @@
             <h3>Statistics</h3>
             <p>Learn to collect, analyze, and interpret data to make informed decisions</p>
             <div class="progress-bar">
-              <div class="progress-value" style="width: 40%"></div>
+              <div class="progress-value" style="width: 25%"></div>
             </div>
-            <p>40% Complete</p>
+            <p>25% Complete</p>
             <a href="statistics.php" class="btn btn-primary">Continue Learning</a>
           </div>
         </div>
@@ -106,4 +106,5 @@
   <?php include 'footer.php'; ?>
 </body>
 </html>
+
 
