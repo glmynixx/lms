@@ -5,31 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Courses - Leverage Money Smartly</title>
   <link rel="stylesheet" href="lms.css">
-
-  <style>
-    /* Force remove underline for course buttons/links */
-    a.btn,
-    a.btn-primary,
-    .btn a,
-    .card a.btn,
-    .card a.btn-primary {
-      text-decoration: none !important;
-      color: white !important;
-      border: none !important;
-      outline: none !important;
-      display: inline-block;
-    }
-
-    a.btn:hover,
-    a.btn-primary:hover,
-    .btn a:hover,
-    .card a.btn:hover,
-    .card a.btn-primary:hover {
-      text-decoration: none !important;
-      color: white !important;
-    }
-  </style>
 </head>
+  
 <body>
   <?php include 'nav.php'; ?>
 
@@ -103,7 +80,30 @@
       </div>
     </div>
   </section>
-
+<style>
+    a.btn,
+    a.btn-primary,
+    .btn a,
+    .card a.btn,
+    .card a.btn-primary {
+      text-decoration: none !important;
+      color: white !important;
+      border: none !important;
+      outline: none !important;
+      display: inline-block;
+    }
+    
+    a.btn:hover,
+    a.btn-primary:hover,
+    .btn a:hover,
+    .card a.btn:hover,
+    .card a.btn-primary:hover {
+      text-decoration: none !important;
+      color: white !important;
+    }
+</style>
+  
   <?php include 'footer.php'; ?>
 </body>
 </html>
+
